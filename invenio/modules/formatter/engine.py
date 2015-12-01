@@ -2023,8 +2023,8 @@ class BibFormatObject(object):
         try:
             assert isinstance(recID, (int, long, type(None))), 'Argument of wrong type!'
         except AssertionError:
-            register_exception(prefix="recid needs to be an integer in BibFormatObject",
-                               alert_admin=True)
+            #register_exception(prefix="recid needs to be an integer in BibFormatObject",
+            #                   alert_admin=True)
             recID = int(recID)
         self.recID = recID
         self.lang = wash_language(ln)
